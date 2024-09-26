@@ -1,0 +1,14 @@
+prefix=/Users/lizhen/Documents/library/ffmpeg-5.1.2/out
+exec_prefix=${prefix}
+libdir=/Users/lizhen/Documents/library/ffmpeg-5.1.2/out/lib
+includedir=/Users/lizhen/Documents/library/ffmpeg-5.1.2/out/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 59.37.100
+Requires: libswresample >= 4.7.100, libavutil >= 57.28.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -liconv -lm -lz
+Libs.private: 
+Cflags: -I${includedir}

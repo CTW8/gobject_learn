@@ -9,12 +9,14 @@
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}/build/gobjectDemo",
-        "args": [],
+        "args": [
+            "/Users/lizhen/Downloads/The_Winner.mp4"
+        ],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
         "environment": [],
         "externalConsole": false,
         "MIMode": "lldb"
     }
-    ],
+    ]
 }
