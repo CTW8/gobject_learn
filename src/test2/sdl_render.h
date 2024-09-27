@@ -4,6 +4,7 @@
 #include <glib-object.h>
 #include <SDL2/SDL.h>
 #include "libavcodec/avcodec.h"
+#include "video_decode.h"
 
 G_BEGIN_DECLS
 
@@ -15,8 +16,9 @@ struct _SdlRenderClass {
     // 在这里添加类的方法
 };
 
-void sdl_render_initialize(SdlRender *self, int width, int height);
-void sdl_render_display_frame(SdlRender *self, AVFrame *frame);
+void sdl_render_initialize(SdlRender *self, VideoDecode *video_decode, int width, int height);
+void sdl_render_start(SdlRender *self);
+void sdl_render_stop(SdlRender *self);
 void sdl_render_cleanup(SdlRender *self);
 
 G_END_DECLS

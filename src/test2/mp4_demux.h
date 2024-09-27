@@ -23,7 +23,7 @@ struct _DemuxMp4Class {
 
 };
 
-void demux_mp4_open(DemuxMp4 *self, const char *filename);
+void demux_mp4_open(DemuxMp4 *self, const char *filename, int max_queue_size);
 AVPacket* demux_mp4_read(DemuxMp4 *self);
 void demux_mp4_seek(DemuxMp4 *self, int64_t timestamp);
 void demux_mp4_close(DemuxMp4 *self);
